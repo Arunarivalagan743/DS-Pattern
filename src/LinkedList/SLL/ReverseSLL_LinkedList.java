@@ -1,4 +1,4 @@
-package LinkedList;
+package LinkedList.SLL;
 
 import java.util.Scanner;
 
@@ -47,6 +47,7 @@ public class ReverseSLL_LinkedList {
         }
         return head = prev;
     }
+
     public static void main(String[] args) {
         Scanner  sc = new Scanner(System.in);
         Node head = null;

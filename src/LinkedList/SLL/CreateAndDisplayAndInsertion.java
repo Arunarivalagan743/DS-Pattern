@@ -1,4 +1,4 @@
-package LinkedList;
+package LinkedList.SLL;
 import java.util.Scanner;
 public class CreateAndDisplayAndInsertion {
 
