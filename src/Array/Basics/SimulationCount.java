@@ -1,4 +1,4 @@
-import java.util.*;
+package Array.Basics;
 
 public class SimulationCount {
 
