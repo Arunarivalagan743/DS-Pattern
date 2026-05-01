@@ -6,8 +6,12 @@ import java.util.*;
 
 import static Tree.Simple.BT.preorder;
 
+
 public class Bfs {
 static Queue <Integer> q = new LinkedList<>();
+
+
+   static  Scanner sc =  new Scanner(System.in);
     static class Node {
         int data;
         Node left;
@@ -20,9 +24,10 @@ static Queue <Integer> q = new LinkedList<>();
             this.right = null;
         }
     }
+
     public static  Node create()
     {
-        Scanner sc =  new Scanner(System.in);
+
         int val  = sc.nextInt();
         if(val ==  -1)
         {
@@ -46,7 +51,7 @@ static Queue <Integer> q = new LinkedList<>();
         preorder(root.left);
         preorder(root.right);
     }
-    public List<List<Integer>> BFS(Node root) {
+    public static List<List<Integer>> BFS(Node root) {
         List<List<Integer>> res = new ArrayList<>();
         Queue<Node> q = new LinkedList<>();
         if(root == null)
@@ -81,7 +86,8 @@ static Queue <Integer> q = new LinkedList<>();
         System.out.println("enter a root");
         Node root =  null;
         root = create();
-////        preorder(root);
-//        BFS(root);
+//        preorder(root);
+       List <List<Integer>> res  = BFS(root);
+        System.out.println(res);
     }
 }
